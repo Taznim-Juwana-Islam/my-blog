@@ -76,26 +76,20 @@ WSGI_APPLICATION = 'myblog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'myblog',  # Replace with your database name
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'my-blog',  
         'ENFORCE_SCHEMA': True,
         'CLIENT': {
-            'host': 'your-mongodb-atlas-connection-string',
+            'host': 'mongodb+srv://taznimjuwana016:17lZ92gL3k4L7X7E@cluster0.ghexurp.mongodb.net/my-blog?retryWrites=true&w=majority',
             'port': 27017,
-            'username': 'your-mongodb-username',
-            'password': 'your-mongodb-password',
+            'username': 'taznimjuwana016',
+            'password': '17lZ92gL3k4L7X7E',
             'authSource': 'admin',
         }
     }
 }
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 
 # Password validation
